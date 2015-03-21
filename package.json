@@ -4,7 +4,8 @@
   "description": "A skeleton app to make developing react apps easier.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,13 @@
   },
   "homepage": "https://github.com/jordan-acosta/reactbone-starter-app",
   "dependencies": {
+    "express": "^4.12.3",
+    "lodash": "^3.5.0",
+    "require-all": "^1.0.0"
+  },
+  "devDependencies": {
     "gulp": "^3.8.11",
-    "gulp-react": "^3.0.1"
+    "gulp-react": "^3.0.1",
+    "mocha": "^2.2.1"
   }
 }
