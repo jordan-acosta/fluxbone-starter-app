@@ -1,0 +1,23 @@
+{
+  "name": "reactbone-starter-app",
+  "version": "1.0.0",
+  "description": "A skeleton app to make developing react apps easier.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jordan-acosta/reactbone-starter-app.git"
+  },
+  "author": "himself@jordanacosta.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordan-acosta/reactbone-starter-app/issues"
+  },
+  "homepage": "https://github.com/jordan-acosta/reactbone-starter-app",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-react": "^3.0.1"
+  }
+}
