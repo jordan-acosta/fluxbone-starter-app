@@ -5,13 +5,8 @@ global.rekuire = require('rekuire');
 var app = require('express')(),
     reactEngine = require('express-react-views').createEngine(),
     apiRouter = rekuire('lib/api'),
-    logger = function( req, res, next ) {
-        console.log( 'req: ', req );
-        next();
-    },
-    handleApp = function( req, res ) {
-        res.render( 'index' );
-    };
+    logger = rekuire('lib/logger'),
+    handleApp = rekuire('lib/app-handler');
 
 app
     .set( 'view engine', 'jsx' )
