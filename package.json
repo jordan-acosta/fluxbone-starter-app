@@ -18,10 +18,14 @@
   },
   "homepage": "https://github.com/jordan-acosta/reactbone-starter-app",
   "dependencies": {
+    "browserify": "^9.0.3",
     "express": "^4.12.3",
+    "gulp-concat": "^2.5.2",
     "lodash": "^3.5.0",
     "reactify": "^1.1.0",
-    "require-all": "^1.0.0"
+    "require-all": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^2.5.0"
   },
   "devDependencies": {
     "gulp": "^3.8.11",

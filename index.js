@@ -2,18 +2,20 @@
 
 global.rekuire = require('rekuire');
 
-var app = require('express')(),
+var express = require('express'),
+    app = express(),
     reactEngine = require('express-react-views').createEngine(),
-    apiRouter = rekuire('lib/api'),
+    api = rekuire('lib/api'),
     logger = rekuire('lib/logger'),
-    handleApp = rekuire('lib/app-handler');
+    index = rekuire('lib/app-handler');
 
 app
     .set( 'view engine', 'jsx' )
     .engine( 'jsx', reactEngine )
     .use( logger )
-    .use( '/api', apiRouter )
-    .get( '/', handleApp )
+    .get( '/', index )
+    .use( '/api', api )
+    .use( '/static', express.static('static') )
     .listen( '8000' );
 
 console.log( 'the app listens on port 8000' );
