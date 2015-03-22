@@ -20,11 +20,11 @@
   "dependencies": {
     "express": "^4.12.3",
     "lodash": "^3.5.0",
+    "reactify": "^1.1.0",
     "require-all": "^1.0.0"
   },
   "devDependencies": {
     "gulp": "^3.8.11",
-    "gulp-react": "^3.0.1",
     "mocha": "^2.2.1"
   }
 }
